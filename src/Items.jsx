@@ -1,8 +1,13 @@
+import DollarImage from './images/dollar-image.jpg';
+import Balance from './images/balance.jpg';
+import Orders from './images/orders.jpg';
+import TotalSales from './images/total-sales.jpg';
+
 function Items() {
   return (
     <>
       <div className='card'>
-        <img src='src/images/dollar-image.jpg' alt='Dollar Sign' />
+        <img src={DollarImage} />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Earning</span>
           <span
@@ -17,7 +22,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/orders.jpg' alt='Order Sign' />
+        <img src={Orders} />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Orders</span>
           <span
@@ -32,7 +37,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/balance.jpg' alt='Balance Sign' />
+        <img src={Balance} />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Balance</span>
           <span
@@ -47,7 +52,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/total-sales.jpg' alt='Total-Sales Sign' />
+        <img src={TotalSales} />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Total Sales</span>
           <span
