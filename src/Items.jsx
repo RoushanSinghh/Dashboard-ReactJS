@@ -2,7 +2,7 @@ function Items() {
   return (
     <>
       <div className='card'>
-        <img src='src/images/dollar-image.png' alt='Dollar Sign' />
+        <img src='src/images/dollar-image.jpg' alt='Dollar Sign' />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Earning</span>
           <span
@@ -17,7 +17,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/orders.png' alt='Order Sign' />
+        <img src='src/images/orders.jpg' alt='Order Sign' />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Orders</span>
           <span
@@ -32,7 +32,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/balance.png' alt='Balance Sign' />
+        <img src='src/images/balance.jpg' alt='Balance Sign' />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Balance</span>
           <span
@@ -47,7 +47,7 @@ function Items() {
         </div>
       </div>
       <div className='card'>
-        <img src='src/images/total-sales.png' alt='Total-Sales Sign' />
+        <img src='src/images/total-sales.jpg' alt='Total-Sales Sign' />
         <div className='inner-text'>
           <span style={{ color: '#9e9ea4' }}>Total Sales</span>
           <span
