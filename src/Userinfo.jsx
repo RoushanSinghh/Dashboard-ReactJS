@@ -8,7 +8,7 @@ export default function Userinfo() {
         gap: '10px',
         margin: '13px 13px 65px 13px',
         padding: '12px',
-        backgroundColor: 'rgb(18 18 76)',
+        backgroundColor: '#2d2d69',
         borderRadius: '5px',
         alignItems: 'center',
       }}

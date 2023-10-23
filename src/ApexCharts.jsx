@@ -1,87 +1,96 @@
-import ReactApexChart from 'react-apexcharts';
+import './ApexCharts.css';
 
-const colors = [
-  '#00B8D9',
-  '#672E3B',
-  '#918597',
-  '#00A36A',
-  '#61C0BF',
-  '#C35D63',
-  '#284C63',
-  '#793447',
-];
-
-const ApexChart = () => {
-  const options = {
-    chart: {
-      height: 350,
-      width: 200,
-      type: 'bar',
-      events: {
-        click: function () {},
-      },
-    },
-    colors: colors,
-    plotOptions: {
-      bar: {
-        columnWidth: '45%',
-        distributed: true,
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    legend: {
-      show: false,
-    },
-    xaxis: {
-      categories: [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ],
-      labels: {
-        style: {
-          colors: colors,
-          fontSize: '12px',
-        },
-      },
-    },
-  };
-
-  const series = [
-    {
-      data: [2, 10, 11, 8, 6, 7, 13, 30, 4, 8, 3, 5],
-    },
-  ];
-
+function ApexCharts() {
   return (
-    <div
-      id='chart'
-      style={{
-        width: '100%',
-        backgroundColor: '#ffffff',
-        boxShadow:
-          '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)',
-      }}
-    >
-      <ReactApexChart
-        options={options}
-        series={series}
-        type='bar'
-        height={350}
-      />
+    <div className='main-chart'>
+      <div className='overview-header'>
+        <div>
+          <div
+            style={{
+              color: 'black',
+              fontSize: '19px',
+              fontWeight: 'bold',
+              letterSpacing: '-1px',
+            }}
+          >
+            Overview
+          </div>
+          <div style={{ color: '#897f7f', fontSize: 'small' }}>
+            Monthly Earning
+          </div>
+        </div>
+        <div style={{ color: 'black' }}>
+          {' '}
+          <select className='select'>
+            <option>Quarterly</option>
+            <option>Montly</option>
+            <option>Weekly</option>
+          </select>
+        </div>
+      </div>
+      <div className='month-view'>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '195px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '130px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '258px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '208px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '234px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '117px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '234px' }}
+        ></div>
+        <div className='month'></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '242px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '221px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '208px' }}
+        ></div>
+        <div
+          className='month'
+          style={{ backgroundColor: '#f2efff', height: '212px' }}
+        ></div>
+      </div>
+      <div className='month-name'>
+        <div>Jan</div>
+        <div>Feb</div>
+        <div>Mar</div>
+        <div>Apr</div>
+        <div>May</div>
+        <div>Jun</div>
+        <div>July</div>
+        <div>Aug</div>
+        <div>Sept</div>
+        <div>Oct</div>
+        <div>Nov</div>
+        <div>Dec</div>
+      </div>
     </div>
   );
-};
+}
 
-export default ApexChart;
+export default ApexCharts;
